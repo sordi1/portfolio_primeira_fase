@@ -1,0 +1,404 @@
+html {
+    font-size: 16px;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    background-color: rgb(24, 24, 24);
+    box-sizing: border-box;
+}
+
+.nome {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: rgb(234, 232, 232);
+    font-size: 4.15em;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.imagem {
+    backdrop-filter: blur(20px);
+    filter: brightness(1);
+    box-shadow: 0 0px 200px 0 rgba(16, 16, 16, 0.37);
+    width: 85%;
+    grid-column: 2;
+    grid-row: 2;
+    border-radius: 6px;
+    transition: opacity 0.4s ease;
+}
+
+.imagem:hover {
+    opacity: 0.9;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 1px;
+    padding: 2%;
+}
+
+.dev {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: rgb(234, 232, 232);
+    font-size: 2.5em;
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 20px;
+}
+
+main {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(80, 4.85px);
+    display: grid;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    grid-column: 3;
+    grid-row: 1;
+    margin-top: -40px;
+    margin-left: 72px;
+}
+
+.menu button {
+    margin-left: 6.5px;
+    border-style: none;
+    display: flex;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: rgb(111, 111, 111);
+    font-size: 1em;
+    cursor: pointer;
+    transition: color 0.6s ease;
+}
+
+button:hover {
+    color: rgb(255, 255, 255);
+}
+
+#info {
+    color: rgb(234, 232, 232);
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 410;
+    font-style: normal;
+    grid-column: 3;
+    grid-row: 2;
+    font-size: 1.3em;
+    width: 525px;
+    margin-right: 200px;
+    margin-top: -13px;
+}
+
+#barra {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    margin-left: 9.1px;
+}
+
+.habilidades {
+    margin-left: 1px;
+}
+
+.projetos {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: rgb(234, 232, 232);
+    grid-column: 3;
+    grid-row: 1;
+    margin-top: -16px;
+    font-size: 2.5em;
+    display: inline-block;
+}
+
+.projeto {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, 0.001px);
+    display: grid;
+    margin-left: -115px;
+    text-decoration: none;
+    margin-top: -35px;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.out {
+    grid-column: 4;
+    grid-row: 1;
+    width: 30%;
+    margin-left: 2px;
+    margin-top: -8.3px;
+    display: inline-block
+}
+
+.menu button.ativo {
+    color: rgb(255, 255, 255);
+}
+
+.projeto1 {
+    margin-top: 70px;
+    width: 1230px;
+    height: 555px;
+    background-color: rgb(17, 17, 17);
+    border-radius: 20px;
+}
+
+.reserva {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: rgb(127, 127, 127);
+    background-color: transparent;
+    font-size: 30px;
+    margin-left: -500px;
+    text-decoration: none;
+    position: absolute;
+    top: 555px;
+}
+
+h1 {
+    background-color: transparent;
+}
+
+.projeto2 {
+    margin-top: 30px;
+    width: 1230px;
+    height: 555px;
+    background-color: rgb(17, 17, 17);
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.reserva:hover {
+    color: rgb(255, 255, 255);
+}
+
+.p1 {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    width: 50%;
+    margin-right: 20px;
+    position: absolute;
+    top: 600px;
+    right: 65px;
+}
+
+.img1 {
+    width: 28%;
+    height: auto;
+    position: absolute;
+    top: 590px;
+    border-radius: 20px;
+    right: 860px;
+    backdrop-filter: blur(20px);
+    filter: brightness(2.2);
+    box-shadow: 0 0px 200px 0 rgba(0, 0, 0, 0.37);
+    transition: opacity 0.4s ease;
+}
+
+.img1:hover {
+    opacity: 0.5;
+}
+
+.img2 {
+    width: 28%;
+    height: auto;
+    border-radius: 20px;
+    position: absolute;
+    top: 1180px;
+    right: 860px;
+    backdrop-filter: blur(20px);
+    filter: brightness(2.2);
+    box-shadow: 0 0px 200px 0 rgba(0, 0, 0, 0.37);
+    transition: opacity 0.4s ease;
+}
+
+.img2:hover {
+    opacity: 0.5;
+}
+
+.p2 {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    width: 50%;
+    margin-right: 20px;
+    position: absolute;
+    top: 1185px;
+    right: 65px;
+}
+
+.linkedin {
+    width: 5%;
+    position: absolute;
+    top: 1710px;
+    right: 1180px;
+    transition: opacity 0.4s ease;
+}
+
+.github {
+    width: 5%;
+    position: absolute;
+    top: 1710px;
+    right: 1100px;
+    transition: opacity 0.4s ease;
+}
+
+.contato {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    position: absolute;
+    top: 1750px;
+    right: 500px;
+}
+
+.linkedin:hover {
+    opacity: 0.5;
+}
+
+.github:hover {
+    opacity: 0.5;
+}
+
+@media (max-width: 1200px) {
+    .nome {
+        font-size: 2em;
+        white-space: nowrap;
+        margin-left: 120px;
+    }
+
+    .dev, .projetos {
+        font-size: 2em;
+        position: absolute;
+        top: 1000px;
+    }
+
+    .menu button {
+        font-size: 0.9em;
+        position: absolute;
+        top: 1000px;
+    }
+
+    .projeto1, .projeto2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .p1, .p2 {
+        width: 60%;
+        font-size: 1em;
+    }
+
+    .img1, .img2 {
+        width: 35%;
+    }
+
+    .linkedin, .github {
+        width: 7%;
+    }
+
+    .contato {
+        font-size: 1em;
+        right: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .nome, .dev, .projetos {
+        font-size: 2.5em;
+        grid-column: 1;
+        text-align: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    #info {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .p1, .p2 {
+        width: 100%;
+        font-size: 0.9em;
+        margin: 0 auto;
+        padding: 1em;
+    }
+
+    .img1, .img2 {
+        width: 45%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .linkedin, .github {
+        width: 10%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .contato {
+        font-size: 1em;
+        text-align: center;
+        right: 0;
+        top: 1800px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nome, .dev, .projetos {
+        font-size: 1.8em;
+    }
+
+    .menu button {
+        font-size: 0.8em;
+    }
+
+    .projeto1, .projeto2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .p1, .p2 {
+        font-size: 0.8em;
+    }
+
+    .img1, .img2 {
+        width: 50%;
+    }
+
+    .linkedin, .github {
+        width: 12%;
+    }
+
+    .contato {
+        font-size: 0.9em;
+        top: 1850px;
+    }
+}
